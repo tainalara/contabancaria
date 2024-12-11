@@ -1,12 +1,29 @@
 package conta;
 
 import java.util.Scanner;
-
+import conta.model.Conta;
 import conta.util.Cores;
 
 public class Menu {
 
 	public static void main(String[] args) {
+
+		/*
+		// Instanciamento | Transformando uma Classe em um Objeto Utilizavel
+		Conta c1 = new Conta(123456, 0001, 1, "Maria das Neves", 500f);
+		c1.setSaldo(5000f);
+
+		System.out.println("Titular" + ": " + c1.getTitular());
+		System.out.println("Saldo: " + c1.getSaldo());
+		*/
+
+		// Teste da Classe Conta
+		Conta c1 = new Conta(1, 123, 1, "Tainá", 10000.0f);
+		c1.visualizar();
+		c1.sacar(12000.0f);
+		c1.visualizar();
+		c1.depositar(5000.0f);
+		c1.visualizar();
 
 		Scanner leia = new Scanner(System.in);
 
@@ -14,7 +31,7 @@ public class Menu {
 
 		while (true) {
 
-			System.out.println(Cores.TEXT_YELLOW + Cores.ANSI_BLACK_BACKGROUND 
+			System.out.println(Cores.TEXT_YELLOW + Cores.ANSI_BLACK_BACKGROUND
 					+ "*********************************************************");
 			System.out.println("                                                         ");
 			System.out.println("                 BANCO DO BRAZIL COM Z                   ");
@@ -37,7 +54,7 @@ public class Menu {
 			System.out.println("                                                         " + Cores.TEXT_RESET);
 
 			opcao = leia.nextInt();
-			
+
 			if (opcao == 9) {
 				System.out.println(Cores.TEXT_WHITE_BOLD + "\nBanco Do Brazil Com Z - O SEU FUTURO COMEÇA AQUI!");
 				sobre();
