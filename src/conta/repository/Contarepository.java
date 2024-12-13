@@ -2,7 +2,7 @@ package conta.repository;
 
 import conta.model.Conta;
 
-public interface Contarepository {
+public interface ContaRepository {
 
 	
 	//CRUD da Conta
