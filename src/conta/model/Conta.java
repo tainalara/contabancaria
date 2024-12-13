@@ -1,6 +1,7 @@
 package conta.model;
 
-public class Conta {
+//Classe Abstrata => Base (molde) para ciar outras classes
+public abstract class Conta {
 	
 	//Atributos (Variáveis)
 	
@@ -35,6 +36,7 @@ public class Conta {
 	}
 	
 	//Comportamentos /Métodos 
+	
 	// Metodos de Acesso
 	
 	// Get -> Pegar (acessar e mostrar oq está la dentro)
